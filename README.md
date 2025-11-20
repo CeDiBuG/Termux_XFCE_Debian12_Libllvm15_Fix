@@ -9,7 +9,28 @@ This repository provides a script to set up an XFCE desktop environment and a De
 
 ## Installation
 
-To install, execute the following command in Termux:
+Install proot-distro
+```bash
+apt install proot-distro
+```
+
+Modify proot-distro to install debian 12 (bookworm)
+
+```bash
+nano $PREFIX/etc/proot-distro/debian.sh
+```
+
+Change the aarch64 github link to 
+```
+https://github.com/termux/proot-distro/releases/download/v4.17.3/debian-bookworm-aarch64-pd-v4.17.3.tar.xz
+```
+
+Also change the SHA256 to : 
+```
+3a841a794ae5999b33e33b329582ed0379d4f54ca62c6ce5a8eb9cff5ef8900b
+```
+
+Start the installation script :
 
 ```bash
 curl -sL https://raw.githubusercontent.com/phoenixbyrd/Termux_XFCE/main/install_xfce_native.sh -o install.sh && bash install.sh
