@@ -7,6 +7,11 @@ This repository provides a script to set up an XFCE desktop environment and a De
 - **Storage Requirements**: Approximately 4GB of storage space is required. Note that additional applications will consume more space.
 - **Detailed Documentation**: Please review the full README for comprehensive information about this setup.
 
+## Libllvm15 error
+ The new proot-distro update from september 2025 change Debian 12 (bookworm) to Debian 13 (trixie).
+ The package isn't available on Debian 13 anymore so mesa driver failed to install.
+ Follow the installation process below to fix the issue. 
+
 ## Installation
 
 Install proot-distro
